@@ -57,7 +57,7 @@ def extract_transactions(pdf_path):
 
 
 if __name__ == "__main__":
-    pdf_path = "../raw/2025-Taxes/Amex Blue/Amex Blue January to December 2025.pdf"
+    pdf_path = "raw/2025-Taxes/Amex Blue/Amex Blue January to December 2025.pdf"
 
     txns = extract_transactions(pdf_path)
 
