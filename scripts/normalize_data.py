@@ -4,9 +4,10 @@ import glob
 from dateutil import parser
 
 # Configuration
-BASE_DIR = "TaxBot"
-RAW_DIR = os.path.join(BASE_DIR, "raw/2025-Taxes")
-OUTPUT_FILE = os.path.join(BASE_DIR, "processing/master_transactions_2025.csv")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(SCRIPT_DIR)
+RAW_DIR = os.path.join(BASE_DIR, "raw", "2025-Taxes")
+OUTPUT_FILE = os.path.join(BASE_DIR, "processing", "master_transactions_2025.csv")
 
 def get_metadata(file_path):
     """
